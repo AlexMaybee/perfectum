@@ -1,0 +1,11 @@
+
+.my-content{
+    min-height: 100vh;
+}
+.header,.footer{
+    background-color: darkgoldenrod;
+}
+
+.field-error{
+    border-color: #d20800;
+}
