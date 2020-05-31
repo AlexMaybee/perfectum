@@ -28,13 +28,6 @@ class MainController extends BaseController
         $data['old'] = $session->getFlashdata('formOld');
         $data['errors'] = $session->getFlashdata('formErrors');
 
-
-//        echo '<pre>';
-//        print_r($session->getFlashdata('errors'));
-//        echo '</pre>';
-
-//        print_r(\Config\Services::validation()->getErrors());
-
         echo view('template/header', $data);
         echo view('template/top_menu');
         echo view('myController/index', $data);
@@ -102,9 +95,6 @@ class MainController extends BaseController
                 $data['old'] = $this->request->getPost();
             }
         }
-
-        print_r($data['message']);
-
 
         echo view('template/header', $data);
         echo view('template/top_menu');
